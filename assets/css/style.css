@@ -1,0 +1,96 @@
+:root{
+  --background-color: #0c2641;
+  --primary-color: #2754ba;
+  --secondary-color: #00aee6;
+  --accent-color: #799eb2;
+  --highlight-color: #b1d4e5;
+  --page-background: #ced5da;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 40;
+  display: flex-box;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: var(--page-background)
+}
+
+header {
+  /*position: fixed;*/
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {                                    /* Unvisited link  */
+  color: var(--accent-color);
+  padding: 1rem;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px; 
+}
+.topnav a:visited {                            /* Visited link    */
+  color: var(--accent-color)
+}    
+.topnav a:hover {                              /* Mouse over link */
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-radius: 25px;
+}
+.topnav a:active {                            /* Selected link   */
+  color: var(--accent-color);
+}
+
+
+.benefits {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #2589bd;
+}
+.section-header {
+  font-size: 60px;
+  width: 20%;
+  display: block;
+  float: left;
+  border-right: solid;
+  color: var(--background-color);
+  padding-right: 0;
+}
+
+.about-section {
+  margin: 0%;
+  display: inline-block;
+  color: var(--background-color);
+  padding: 1%;
+}
+
+.about-content {
+  float: right;
+  width: 80%;
+  padding-left: 3%;
+}
+
+
+
