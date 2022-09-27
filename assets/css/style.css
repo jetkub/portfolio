@@ -15,7 +15,6 @@ body {
   position: relative;
   margin: 40;
   display: flex-box;
-  flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
   background-color: var(--page-background)
@@ -59,38 +58,147 @@ header h1 {
 }
 
 
-.benefits {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2589bd;
-}
-.section-header {
-  font-size: 60px;
-  width: 20%;
-  display: block;
-  float: left;
-  border-right: solid;
-  color: var(--background-color);
-  padding-right: 0;
+.flex-container {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  margin: 1%;
+  flex-shrink: 0;
 }
 
 .about-section {
-  margin: 0%;
-  display: inline-block;
-  color: var(--background-color);
-  padding: 1%;
+  width: auto;
+  padding: 2%;
+  margin: 1%;
+}
+
+.about-heading {
+  min-width: 20%;
+  display: flex;
+  position:relative;
+  font-size: 3.5em;
 }
 
 .about-content {
   float: right;
-  width: 80%;
-  padding-left: 3%;
+  min-width: 50%;
+  padding: 0% 3%;
+  margin-right: 3%;
+}
+
+.work-section {
+  width: auto;
+  padding: 2%;
+  margin: 1%;
+}
+
+.work-heading {
+  min-width: 20%;
+  display: flex;
+  position:relative;
+  font-size: 3.5em;
+}
+
+.work-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid var(--accent-color);
+  justify-content: space-around;
+  align-content: center;
+  width: 60%;
+}
+
+.work-item-container a {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.work-item1 {
+  width: 100%;
+  float: right;
+  border: 3px solid var(--background-color);
+  padding: 0% 1%;
+  margin-right: 0%;
+  /* flex-grow: 2;
+  flex-basis: 0; */
 }
 
 
+.image-container img {
+  max-width: 100%;
+}
 
+.image-container:hover {
+  filter:blur(2px);
+  transition: 0.5s ease-in-out;
+}
+
+
+.work-item2 {
+  flex: 1;
+  float: right;
+  border: 3px solid var(--background-color);
+  padding: 0% 1%;
+  margin-right: 0%;
+  /* flex-grow: 1;
+  flex-basis: 0; */
+}
+
+.work-item3 {
+  flex: 1;
+  float: right;
+  border: 3px solid var(--background-color);
+  padding: 0% 1%;
+  margin-right: 0%;
+  /* flex-grow: 1;
+  flex-basis: 0; */
+}
+
+.contact-section {
+  width: auto;
+  padding: 2%;
+  margin: 1%;
+}
+
+.contact-heading {
+  min-width: 20%;
+  display: flex;
+  position:relative;
+  font-size: 3.5em;
+}
+
+.contact-content {
+  min-width: 50%;
+  padding: 0% 3%;
+  margin-right: 3%;
+}
+
+.contact-content ul li {                                    /* Unvisited link  */
+  padding: 3rem;
+  float: left;
+  font-size: 20px; 
+}
+
+.contact-content a {                                    /* Unvisited link  */
+  color: var(--accent-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+   main,
+   .topnav {
+    flex-direction: column;
+  }
+} */
