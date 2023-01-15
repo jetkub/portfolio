@@ -1,99 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./assets/css/main.css" rel="stylesheet" />
+		<title>Portfolio</title>
+	</head>
+	<body class="bg-base-300">
+		<!-- testing viewport breakpoints, remove in future-->
+		<!-- <div class="navbar bg-base-200 mb-6 max-sm:bg-purple-400 sm:bg-red-400 md:bg-orange-400 lg:bg-yellow-400 xl:bg-green-400 "> -->
+		<div class="navbar bg-base-100 mb-6">
+			<div class="navbar-start">
+				<div class="dropdown dropdown-right" onmousedown="checkAndCloseDropDown(e)">
+					<label tabindex="0" class="btn btn-sm btn-ghost">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+						</svg>
+					</label>
+					<ul
+						tabindex="0"
+						class="menu menu-compact dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-40">
+						<li><a href="#about" class="text-base">About</a></li>
+						<li><a href="#projects" class="text-base">Projects</a></li>
+						<li><a href="#contact" class="text-base">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakub Cichon's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+			<!-- add something so that the last two buttons are right-justified when max-sm: -->
+			<div class="navbar-end">
+				<div class="dropdown dropdown-end mx-1" aria-label="theme-picker">
+					<label tabindex="0" class="btn btn-primary btn-sm">Theme</label>
+					<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40">
+						<li><button class="btn-sm" data-set-theme="cupcake">Cupcake</button></li>
+						<li><button class="btn-sm" data-set-theme="dark">Dark</button></li>
+						<li><button class="btn-sm" data-set-theme="emerald">Emerald</button></li>
+						<li><button class="btn-sm" data-set-theme="corporate">Corporate</button></li>
+						<li><button class="btn-sm" data-set-theme="synthwave">Synthwave</button></li>
+						<li><button class="btn-sm" data-set-theme="aqua">Aqua</button></li>
+						<li><button class="btn-sm" data-set-theme="wireframe">Wireframe</button></li>
+						<li><button class="btn-sm" data-set-theme="night">Night</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<main>
+			<section>
+				<a name="about">
+					<div class="card lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6">
+						<figure class="py-16">
+							<img class="rounded-full" src="./assets/images/jakub.jpg" alt="headshot" />
+						</figure>
+						<div class="card-body">
+							<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Hello! My name is Jakub Cichon. I'm passionate about technology.</h2>
+							<p class="mt-3">
+								I'm a new to the web development world and I'm thrilled to jump in with both feet and explore all it has to offer! I'm currently working as a Web Infrastructure Specialist at a banking software company in Connecticut. I've got a degree in Statistics from the University of Connecticut and a burning passion for solving problems. I have experience with supporting large distributed applications, application deployment, CLI tool development and incident management. I love finding ways to make my team's daily work more efficient. I'm constantly on the hunt for new knowledge and I like to think that if there were a certification for internet searching your way out of a problem, I'd have one by now. I'm also a huge fan of online privacy and open source software. Let's make the internet a better place together!
+							</p>
+							<div class="mt-6 flex items-center flex-wrap">
+								<div class="flex-shrink-0">
+									<div class="flex-col space-x-2">
+										<a
+											class="btn btn-sm btn-secondary"
+											href="https://github.com/jakubcic"
+											target="_blank">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-6 h-6">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+											</svg>
+											<span class="ml-1">GitHub</span>
+										</a>
+										<a
+											href="https://www.linkedin.com/in/jakubcic/"
+											target="_blank"
+											class="btn btn-sm btn-accent">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-6 h-6">
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+											</svg>
+											<span class="ml-1">LinkedIn</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</section>
+			<!-- <section class="space-y-4 mt-4">
+				<a name="projects">
+					<div
+						class="card divide-y divide-base-100 overflow-hidden bg-base-300 shadow-lg sm:mx-36 max-sm:24 mx-5">
+						<div class="px-4 py-5 sm:px-6">
+							<h2 class="card-title text-5xl text-center">My Projects</h2>
+							
+						</div>
+						<div class="px-4 sm:p-6 space-y-4">
+							<div class="card w-auto bg-base-100">
+								<figure>
+									<img src="https://placeimg.com/400/225/arch" alt="GRIMS landing page" />
+								</figure>
+								<div class="card-body">
+									<h2 class="card-title">
+										G.R.I.M.S
+										<span class="inline-flex space-x-2 flex-wrap">
+											<div class="badge badge-primary">Node.js</div>
+											<div class="badge badge-secondary">Express</div>
+											<div class="badge badge-info">MySQL</div>
+											<div class="badge badge-info">Handlebars</div>
+										</span>
+									</h2>
+									<p>
+										G.R.I.M.S (General Retail Inventory Management System) is an online inventory
+										management system. Users can log in and add products or edit and delete existing
+										ones. They can manage price and stock of individual products.
+									</p>
+									<div class="card-actions justify-end">
+										<a href="" class="btn btn-sm btn-info">Website</a>
+										<a href="" class="btn btn-sm btn-info">GitHub Repo</a>
+									</div>
+								</div>
+							</div>
+							<div class="card w-auto bg-base-100">
+								<figure>
+									<img src="https://placeimg.com/400/225/arch" alt="GRIMS landing page" />
+								</figure>
+								<div class="card-body">
+									<h2 class="card-title">
+										G.R.I.M.S
+										<div class="badge badge-primary">Node.js</div>
+										<div class="badge badge-secondary">Express</div>
+										<div class="badge badge-info">MySQL</div>
+										<div class="badge badge-info">Handlebars</div>
+									</h2>
+									<p>
+										G.R.I.M.S (General Retail Inventory Management System) is an online inventory
+										management system. Users can log in and add products or edit and delete existing
+										ones. They can manage price and stock of individual products.
+									</p>
+									<div class="card-actions justify-end">
+										<a href="" class="btn btn-sm btn-info">Website</a>
+										<a href="" class="btn btn-sm btn-info">GitHub Repo</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</section> -->
+			<section>
+				<div class="relative px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+					<div class="relative mx-auto max-w-7xl">
+						<a name="projects">
+							<div class="text-center">
+								<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">My Projects</h2>
+								<p class="mx-auto mt-3 max-w-2xl text-xl sm:mt-4">
+									Take a look at what I've been working on lately.
+								</p>
+							</div>
+						</a>
+						<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+							<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+								<div class="flex-shrink-0">
+									<img
+										class="h-48 w-full object-cover"
+										src="./assets/images/grims-preview.jpg"
+										alt="GRIMS web application landing page" />
+								</div>
+								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
+									<div class="flex-1">
+										<span class="flex-wrap">
+											<div class="badge badge-secondary">node.js</div>
+											<div class="badge badge-secondary">express.js</div>
+											<div class="badge badge-secondary">MySQL</div>
+											<div class="badge badge-secondary">Handlebars</div>
+										</span>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">G.R.I.M.S</p>
+											<p class="mt-3 text-base">
+												G.R.I.M.S (General Retail Inventory Management System) is an online inventory management system. Users can log in and view, add or edit and delete products. They have the ability to manage the price and current stock of individual items. This application integrates with a cloud image host called Cloudinary.
+											</p>
+										</div>
+									</div>
+									<div class="mt-6 flex items-center">
+										<div class="flex-shrink-0">
+											<div class="flex-col flex-wrap space-x-2">
+												<a href="https://grims-inventory.herokuapp.com/login" target="_blank" class="btn btn-sm btn-accent">Website</a>
+												<a href="https://github.com/Eaponte24/GRIMS" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+								<div class="flex-shrink-0">
+									<img
+										class="h-48 w-full object-cover"
+										src="./assets/images/employee-tracker-cli.jpg"
+										alt="Employee Tracker CLI tool terminal window" />
+								</div>
+								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
+									<div class="flex-1">
+										<span class="flex-wrap">
+											<div class="badge badge-secondary">node.js</div>
+											<div class="badge badge-secondary">MySQL</div>
+										</span>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">Employee Tracker CLI Content Management System</p>
+											<p class="mt-3 text-base">
+												Employee Tracker is a CLI content management system (CMS). The purpose of this tool is to manage a database of employees at your company. It's written in JavaScript and runs on Node.js. This application connects to a MySQL database. When you run it you will be presented with choices that include creating, reading, updating, and deleting information from the CMS. The data is displayed in a table in the console.
+											</p>
+										</div>
+									</div>
+									<div class="mt-6 flex items-center">
+										<div class="flex-shrink-0">
+											<div class="flex-col flex-wrap space-x-2">
+												<a href="https://github.com/jakubcic/employee-tracker" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-  <body>
-    <!-- header-->
-    <header>
-      <h1>Jakub Cichon</h1>
-      <!-- nav bar -->
-      <nav class="topnav">
-        <a href="#about">About</a>
-        <a href="#work">My Work</a>
-        <!--<a href="https://github.com/jakubcic">GitHub</a>-->
-        <a href="#contact">Contact Me</a>
-      </nav>
-    </header>
-    <main>
-      <a name="about">
-        <section class="flex-container">
-          <div class="about-section about-heading">
-            <h2>
-              About Me
-            </h2>
-          </div>
-          <div class="about-section about-content">
-            <p>
-              I'm new to the web development world and I'm excited to dive into this industry, learn as much as I can, and grow my skill set.
-              I'm 26 years old and since graduating college I've been working as a Web Infrastructure Specialist at a banking software company in Connecticut. 
-              I have a degree in Statistics from the Univsersity of Connecticut and I have a passion for solving problems. Research and constant
-              learning are extremely important to me. If there were a certification for internet searching your way out of a problem, I'd have one.
-              I'm a big proponent of online privacy and open source software.
-            </p>
-          </div>
-        </section>
-      </a>
-      <a name="work">
-        <section class="flex-container">
-          <div class="work-section work-heading">
-            <h2>
-              My Work
-            </h2>
-          </div>
-          <section class="work-item-container">
-            <div class="work-item1">
-              <a target="_blank" href="https://grims-inventory.herokuapp.com/login" class="image-container">
-                <img src="./assets/images/grims-login.png" alt="GRIMS login page page screenshot">
-              </a>
-              <p>G.R.I.M.S - General Retail Inventory Management System</p>
-            </div>
-            <div class="work-item2">
-              <a target="_blank" href="https://jakubcic.github.io/horiseon-site/" class="image-container">
-                <img src="./assets/images/horiseon-site.PNG" alt="horiseon site screenshot">
-              </a>
-              <p>Horiseon Site</p>
-            </div>
-            <div class="work-item3">
-              <a target="_blank" href="https://jakubcic.github.io/landing-page/" class="image-container">
-                <img src="./assets/images/landing-page.PNG" alt="landing page screenshot">
-              </a>
-              <p>Landing Page</p>
-            </div>
-          </section>
-        </section>
-      </a>
-
-      <a name="contact">
-        <section class="flex-container">
-          <div class="contact-section contact-heading">
-            <h2>
-              Contact Me
-            </h2>
-          </div>
-          <div class="contact-section contact-content">
-            <ul>
-              <li>
-                555-555-5555
-              </li>
-              <li>
-                <a href="mailto:jakub@uconn.edu">jakub@uconn.edu</a>
-              </li>
-              <li>
-                <a href="https://github.com/jakubcic">GitHub</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </a>
-    </main>
-
-  </body>
-
+							<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+								<div class="flex-shrink-0">
+									<img
+										class="h-48 w-full object-cover"
+										src="./assets/images/coding-quiz.jpg"
+										alt="Code Quiz Challenge landing page" />
+								</div>
+								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
+									<div class="flex-1">
+										<span class="flex-wrap">
+											<div class="badge badge-secondary">JavaScript</div>
+											<div class="badge badge-secondary">HTML</div>
+											<div class="badge badge-secondary">CSS</div>
+										</span>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">Code Quiz Challenge</p>
+											<p class="mt-3 text-base">
+												This a quiz consisting of 5 total questions. The user is given 75 seconds to complete the quiz. Each wrong answer will decrement the timer (and consequently the user's score) with a 10 second penalty. The user is given the ability to save their score and view a leaderboard. The scores persist and are saved to the browser's local storage.
+											</p>
+										</div>
+									</div>
+									<div class="mt-6 flex items-center">
+										<div class="flex-shrink-0">
+											<div class="flex-col flex-wrap space-x-2">
+												<a href="https://jakubcic.github.io/code-quiz/index.html" target="_blank" class="btn btn-sm btn-accent">Website</a>
+												<a href="https://github.com/jakubcic/code-quiz" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./assets/js/themeChange.js"></script>
+		<script src="./assets/js/helpers.js"></script>
+	</body>
 </html>
