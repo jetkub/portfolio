@@ -3299,6 +3299,14 @@ html {
   margin-left: 0.75rem;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -3545,6 +3553,14 @@ html {
 .text-base-100 {
   --tw-text-opacity: 1;
   color: hsl(var(--b1) / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.no-underline {
+  text-decoration-line: none;
 }
 
 .placeholder-gray-500::-moz-placeholder {
