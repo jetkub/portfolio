@@ -1,22 +1,10 @@
 <!DOCTYPE html>
-<html
-	lang="en"
-	data-theme="cupcake"
->
+<html lang="en" data-theme="cupcake">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge"
-		/>
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<link
-			href="./assets/css/main.css"
-			rel="stylesheet"
-		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./assets/css/main.css" rel="stylesheet" />
 		<title>Portfolio</title>
 	</head>
 
@@ -26,10 +14,7 @@
 		<div class="navbar bg-base-100 mb-6">
 			<div class="navbar-start">
 				<div class="dropdown dropdown-right">
-					<label
-						tabindex="0"
-						class="btn btn-sm btn-ghost"
-					>
+					<label tabindex="0" class="btn btn-sm btn-ghost">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -50,28 +35,13 @@
 						class="menu menu-compact dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-40"
 					>
 						<li>
-							<a
-								href="#about"
-								class="text-base"
-							>
-								About
-							</a>
+							<a href="#about" class="text-base">About</a>
 						</li>
 						<li>
-							<a
-								href="#projects"
-								class="text-base"
-							>
-								Projects
-							</a>
+							<a href="#projects" class="text-base">Projects</a>
 						</li>
 						<li>
-							<a
-								href="#contact"
-								class="text-base"
-							>
-								Contact
-							</a>
+							<a href="#contact" class="text-base">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -79,99 +49,47 @@
 
 			<!-- add something so that the last two buttons are right-justified when max-sm: -->
 			<div class="navbar-end">
-				<div
-					class="dropdown dropdown-end mx-1"
-					aria-label="theme-picker"
-				>
-					<label
-						tabindex="0"
-						class="btn btn-primary btn-sm"
-					>
-						Theme
-					</label>
-					<ul
-						tabindex="0"
-						class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40"
-					>
+				<div class="dropdown dropdown-end mx-1" aria-label="theme-picker">
+					<label tabindex="0" class="btn btn-primary btn-sm">Theme</label>
+					<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40">
 						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme=""
-								data-act-class="ACTIVECLASS"
-							>
+							<button class="btn-sm text-base" data-set-theme="" data-act-class="ACTIVECLASS">
 								System Theme
 							</button>
 						</li>
 						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="cupcake"
-								data-act-class="ACTIVECLASS"
-							>
-								Cupcake
+							<button class="btn-sm text-base" data-set-theme="business" data-act-class="ACTIVECLASS">
+								Business
 							</button>
 						</li>
 						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="dark"
-								data-act-class="ACTIVECLASS"
-							>
-								Dark
-							</button>
-						</li>
-						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="emerald"
-								data-act-class="ACTIVECLASS"
-							>
-								Emerald
-							</button>
-						</li>
-						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="corporate"
-								data-act-class="ACTIVECLASS"
-							>
+							<button class="btn-sm text-base" data-set-theme="corporate" data-act-class="ACTIVECLASS">
 								Corporate
 							</button>
 						</li>
 						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="synthwave"
-								data-act-class="ACTIVECLASS"
-							>
+							<button class="btn-sm text-base" data-set-theme="cupcake" data-act-class="ACTIVECLASS">
+								Cupcake
+							</button>
+						</li>
+						<li class="h-9">
+							<button class="btn-sm text-base" data-set-theme="emerald" data-act-class="ACTIVECLASS">
+								Emerald
+							</button>
+						</li>
+						<li class="h-9">
+							<button class="btn-sm text-base" data-set-theme="customNight" data-act-class="ACTIVECLASS">
+								Night
+							</button>
+						</li>
+						<li class="h-9">
+							<button class="btn-sm text-base" data-set-theme="synthwave" data-act-class="ACTIVECLASS">
 								Synthwave
 							</button>
 						</li>
 						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="aqua"
-								data-act-class="ACTIVECLASS"
-							>
-								Aqua
-							</button>
-						</li>
-						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="wireframe"
-								data-act-class="ACTIVECLASS"
-							>
+							<button class="btn-sm text-base" data-set-theme="wireframe" data-act-class="ACTIVECLASS">
 								Wireframe
-							</button>
-						</li>
-						<li class="h-9">
-							<button
-								class="btn-sm text-base"
-								data-set-theme="night"
-								data-act-class="ACTIVECLASS"
-							>
-								Night
 							</button>
 						</li>
 					</ul>
@@ -182,40 +100,30 @@
 			<section>
 				<a name="about">
 					<div
-						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6"
+						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-lg lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6"
 					>
 						<figure class="py-6 sm:py-12">
-							<img
-								class="rounded-full"
-								src="./assets/images/jakub.jpg"
-								alt="headshot"
-							/>
+							<img class="rounded-full" src="./assets/images/jakub.jpg" alt="headshot" />
 						</figure>
 						<div class="card-body">
 							<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
 								Hello! My name is Jakub Cichon. I'm passionate about technology.
 							</h2>
 							<p class="mt-3">
-								I'm new to the web development world and I'm thrilled to jump in with both feet and
-								explore all it has to offer! I'm currently working as a Web Infrastructure
-								Specialist at a banking software company in Connecticut. I've got a degree in
-								Statistics from the University of Connecticut and a burning passion for solving
-								problems. I have experience with supporting large distributed applications,
-								application deployment, CLI tool development and incident management. I love finding
-								ways to make my team's daily work more efficient. I'm constantly on the hunt for new
-								knowledge and I like to think that if there were a certification for internet
-								searching your way out of a problem, I'd have one by now. I'm also a huge fan of
-								online privacy and open source software. Let's make the internet a better place
-								together!
+								I'm new to the web development world and I'm thrilled to jump in with both feet and explore
+								all it has to offer! I'm currently working as a Web Infrastructure Specialist at a banking
+								software company in Connecticut. I've got a degree in Statistics from the University of
+								Connecticut and a burning passion for solving problems. I have experience with supporting
+								large distributed applications, application deployment, CLI tool development and incident
+								management. I love finding ways to make my team's daily work more efficient. I'm constantly on
+								the hunt for new knowledge and I like to think that if there were a certification for internet
+								searching your way out of a problem, I'd have one by now. I'm also a huge fan of online
+								privacy and open source software. Let's make the internet a better place together!
 							</p>
 							<div class="mt-6 flex items-center flex-wrap">
 								<div class="flex-shrink-0">
 									<div class="flex-col space-x-2 max-sm:flex-wrap max-sm:items-center">
-										<a
-											class="btn btn-sm btn-secondary"
-											href="https://github.com/jakubcic"
-											target="_blank"
-										>
+										<a class="btn btn-sm btn-secondary" href="https://github.com/jakubcic" target="_blank">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
@@ -288,17 +196,13 @@
 											<div class="badge badge-secondary">MySQL</div>
 											<div class="badge badge-secondary">Handlebars</div>
 										</span>
-										<div
-											href="#"
-											class="mt-2 block"
-										>
+										<div href="#" class="mt-2 block">
 											<p class="text-xl font-semibold">G.R.I.M.S</p>
 											<p class="mt-3 text-base">
-												G.R.I.M.S (General Retail Inventory Management System) is an online
-												inventory management system. Users can log in and view, add or edit and
-												delete products. They have the ability to manage the price and current stock
-												of individual items. This application integrates with a cloud image host
-												called Cloudinary.
+												G.R.I.M.S (General Retail Inventory Management System) is an online inventory
+												management system. Users can log in and view, add or edit and delete products. They
+												have the ability to manage the price and current stock of individual items. This
+												application integrates with a cloud image host called Cloudinary.
 											</p>
 										</div>
 									</div>
@@ -308,14 +212,14 @@
 												<a
 													href="https://grims-inventory.herokuapp.com/login"
 													target="_blank"
-													class="btn btn-sm btn-accent"
+													class="btn btn-sm btn-primary"
 												>
 													Website
 												</a>
 												<a
 													href="https://github.com/Eaponte24/GRIMS"
 													target="_blank"
-													class="btn btn-sm btn-accent"
+													class="btn btn-sm btn-primary"
 												>
 													GitHub Repo
 												</a>
@@ -338,20 +242,14 @@
 											<div class="badge badge-secondary">node.js</div>
 											<div class="badge badge-secondary">MySQL</div>
 										</span>
-										<div
-											href="#"
-											class="mt-2 block"
-										>
-											<p class="text-xl font-semibold">
-												Employee Tracker CLI Content Management System
-											</p>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">Employee Tracker CLI Content Management System</p>
 											<p class="mt-3 text-base">
-												Employee Tracker is a CLI content management system (CMS). The purpose of
-												this tool is to manage a database of employees at your company. It's written
-												in JavaScript and runs on Node.js. This application connects to a MySQL
-												database. When you run it you will be presented with choices that include
-												creating, reading, updating, and deleting information from the CMS. The data
-												is displayed in a table in the console.
+												Employee Tracker is a CLI content management system (CMS). The purpose of this tool is
+												to manage a database of employees at your company. It's written in JavaScript and runs
+												on Node.js. This application connects to a MySQL database. When you run it you will be
+												presented with choices that include creating, reading, updating, and deleting
+												information from the CMS. The data is displayed in a table in the console.
 											</p>
 										</div>
 									</div>
@@ -361,7 +259,7 @@
 												<a
 													href="https://github.com/jakubcic/employee-tracker"
 													target="_blank"
-													class="btn btn-sm btn-accent"
+													class="btn btn-sm btn-primary"
 												>
 													GitHub Repo
 												</a>
@@ -386,17 +284,13 @@
 											<div class="badge badge-secondary">HTML</div>
 											<div class="badge badge-secondary">CSS</div>
 										</span>
-										<div
-											href="#"
-											class="mt-2 block"
-										>
+										<div href="#" class="mt-2 block">
 											<p class="text-xl font-semibold">Code Quiz Challenge</p>
 											<p class="mt-3 text-base">
-												This a quiz consisting of 5 total questions. The user is given 75 seconds to
-												complete the quiz. Each wrong answer will decrement the timer (and
-												consequently the user's score) with a 10 second penalty. The user is given
-												the ability to save their score and view a leaderboard. The scores persist
-												and are saved to the browser's local storage.
+												This a quiz consisting of 5 total questions. The user is given 75 seconds to complete
+												the quiz. Each wrong answer will decrement the timer (and consequently the user's
+												score) with a 10 second penalty. The user is given the ability to save their score and
+												view a leaderboard. The scores persist and are saved to the browser's local storage.
 											</p>
 										</div>
 									</div>
@@ -406,14 +300,14 @@
 												<a
 													href="https://jakubcic.github.io/code-quiz/index.html"
 													target="_blank"
-													class="btn btn-sm btn-accent"
+													class="btn btn-sm btn-primary"
 												>
 													Website
 												</a>
 												<a
 													href="https://github.com/jakubcic/code-quiz"
 													target="_blank"
-													class="btn btn-sm btn-accent"
+													class="btn btn-sm btn-primary"
 												>
 													GitHub Repo
 												</a>
@@ -427,21 +321,38 @@
 				</div>
 			</section>
 			<section>
-				<div class="relative bg-base-300">
-					<div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-						<div class="bg-secondary py-16 px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+				<div class="bg-accent">
+					<div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-6">
+						<div class="bg-accent py-16 px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pr-12">
 							<div class="mx-auto max-w-lg">
-								<h2 class="text-2xl font-bold tracking-tight text-base-content sm:text-3xl">
-									Get in touch
-								</h2>
-								<p class="mt-3 text-lg leading-6 text-base-100">
-									Please reach out to me if you would like to collaborate on a project or if you have any questions about my work.
-								</p>
+								<a name="contact">
+									<h2 class="text-2xl font-bold tracking-tight text-base-content sm:text-3xl">
+										Get in touch
+									</h2>
+									<p class="mt-3 text-lg leading-6 text-base-100">
+										Please reach out to me if you would like to collaborate on a project or if you have any
+										questions about my work.
+									</p>
+								</a>
 								<dl class="mt-8 text-base text-base-100">
 									<div>
 										<dt class="sr-only">Postal address</dt>
-										<dd>
-											<p>West Hartford, CT 06110</p>
+										<dd class="flex">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-6 h-6"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+												/>
+											</svg>
+											<p class="ml-3">West Hartford, CT 06110</p>
 										</dd>
 									</div>
 									<!-- <div class="mt-6">
@@ -484,97 +395,75 @@
 													d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
 												/>
 											</svg>
-											<span class="ml-3 hover:underline"><a href="mailto:jakub@uconn.edu">jakub@uconn.edu</a></span>
+											<span class="ml-3 hover:underline">
+												<a href="mailto:jakub@uconn.edu">jakub@uconn.edu</a>
+											</span>
 										</dd>
 									</div>
 								</dl>
 								<p class="mt-6 text-base-content">
 									Are you a recruiter?
 									<a
-										href="#"
+										href="https://www.linkedin.com/in/jakubcic/"
+										target="_blank"
 										class="font-medium text-base-content hover:underline"
 									>
 										Please check out my LinkedIn
 									</a>
-									.
 								</p>
 							</div>
 						</div>
-						<div class="bg-base-100 py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+						<!-- figure out how to make contact form a card when the viewport is large enought to have them side-by-side. otherwise, when stacked on top just have flat edges/sit flush -->
+						<div
+							class="bg-base-100 rounded-xl m-8 max-lg:m-0 max-lg:rounded-none shadow-lg py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
+						>
 							<div class="mx-auto max-w-lg lg:max-w-none">
-								<form
-									action="#"
-									method="POST"
-									class="grid grid-cols-1 gap-y-6"
-								>
+								<form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
 									<div>
-										<label
-											for="full-name"
-											class="sr-only"
-										>
-											Full name
-										</label>
+										<label for="full-name" class="sr-only">Full name</label>
 										<input
 											type="text"
 											name="full-name"
 											id="full-name"
 											autocomplete="name"
-											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-primary focus:ring-primary"
 											placeholder="Full name"
 										/>
 									</div>
 									<div>
-										<label
-											for="email"
-											class="sr-only"
-										>
-											Email
-										</label>
+										<label for="email" class="sr-only">Email</label>
 										<input
 											id="email"
 											name="email"
 											type="email"
 											autocomplete="email"
-											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-primary focus:ring-primary"
 											placeholder="Email"
 										/>
 									</div>
 									<div>
-										<label
-											for="phone"
-											class="sr-only"
-										>
-											Phone
-										</label>
+										<label for="phone" class="sr-only">Phone</label>
 										<input
 											type="text"
 											name="phone"
 											id="phone"
 											autocomplete="tel"
-											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-primary focus:ring-primary"
 											placeholder="Phone"
 										/>
 									</div>
 									<div>
-										<label
-											for="message"
-											class="sr-only"
-										>
-											Message
-										</label>
+										<label for="message" class="sr-only">Message</label>
 										<textarea
 											id="message"
 											name="message"
 											rows="4"
-											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-primary focus:ring-primary"
 											placeholder="Message"
 										></textarea>
 									</div>
 									<div>
-										<button
-											type="submit"
-											class="inline-flex justify-center btn btn-sm btn-secondary" 
-										>
+										<button type="submit" class="inline-flex justify-center btn btn-sm btn-secondary">
 											Submit
 										</button>
 									</div>
