@@ -2912,6 +2912,19 @@ html {
   border-radius: var(--rounded-box, 1rem);
 }
 
+.btm-nav-sm {
+  height: 3rem;
+}
+
+.btm-nav-sm>*:where(.active) {
+  border-top-width: 2px;
+}
+
+.btm-nav-sm .btm-nav-label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .btn-sm {
   height: 2rem;
   padding-left: 0.75rem;
@@ -3098,6 +3111,18 @@ html {
   height: 12rem;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -3249,6 +3274,10 @@ html {
   padding: 1.5rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -3310,6 +3339,11 @@ html {
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
