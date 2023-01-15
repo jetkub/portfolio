@@ -12,7 +12,7 @@
 		<!-- <div class="navbar bg-base-200 mb-6 max-sm:bg-purple-400 sm:bg-red-400 md:bg-orange-400 lg:bg-yellow-400 xl:bg-green-400 "> -->
 		<div class="navbar bg-base-100 mb-6">
 			<div class="navbar-start">
-				<div class="dropdown dropdown-right" onmousedown="checkAndCloseDropDown(e)">
+				<div class="dropdown dropdown-right">
 					<label tabindex="0" class="btn btn-sm btn-ghost">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +42,46 @@
 				<div class="dropdown dropdown-end mx-1" aria-label="theme-picker">
 					<label tabindex="0" class="btn btn-primary btn-sm">Theme</label>
 					<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40">
-						<li><button class="btn-sm" data-set-theme="cupcake">Cupcake</button></li>
-						<li><button class="btn-sm" data-set-theme="dark">Dark</button></li>
-						<li><button class="btn-sm" data-set-theme="emerald">Emerald</button></li>
-						<li><button class="btn-sm" data-set-theme="corporate">Corporate</button></li>
-						<li><button class="btn-sm" data-set-theme="synthwave">Synthwave</button></li>
-						<li><button class="btn-sm" data-set-theme="aqua">Aqua</button></li>
-						<li><button class="btn-sm" data-set-theme="wireframe">Wireframe</button></li>
-						<li><button class="btn-sm" data-set-theme="night">Night</button></li>
+						<li>
+							<button class="btn-sm" data-set-theme="cupcake" data-act-class="ACTIVECLASS">
+								Cupcake
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="dark" data-act-class="ACTIVECLASS">
+								Dark
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="emerald" data-act-class="ACTIVECLASS">
+								Emerald
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="corporate" data-act-class="ACTIVECLASS">
+								Corporate
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="synthwave" data-act-class="ACTIVECLASS">
+								Synthwave
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="aqua" data-act-class="ACTIVECLASS">
+								Aqua
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="wireframe" data-act-class="ACTIVECLASS">
+								Wireframe
+							</button>
+						</li>
+						<li>
+							<button class="btn-sm" data-set-theme="night" data-act-class="ACTIVECLASS">
+								Night
+							</button>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -57,18 +89,31 @@
 		<main>
 			<section>
 				<a name="about">
-					<div class="card lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6">
+					<div
+						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6">
 						<figure class="py-16">
 							<img class="rounded-full" src="./assets/images/jakub.jpg" alt="headshot" />
 						</figure>
 						<div class="card-body">
-							<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Hello! My name is Jakub Cichon. I'm passionate about technology.</h2>
+							<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+								Hello! My name is Jakub Cichon. I'm passionate about technology.
+							</h2>
 							<p class="mt-3">
-								I'm new to the web development world and I'm thrilled to jump in with both feet and explore all it has to offer! I'm currently working as a Web Infrastructure Specialist at a banking software company in Connecticut. I've got a degree in Statistics from the University of Connecticut and a burning passion for solving problems. I have experience with supporting large distributed applications, application deployment, CLI tool development and incident management. I love finding ways to make my team's daily work more efficient. I'm constantly on the hunt for new knowledge and I like to think that if there were a certification for internet searching your way out of a problem, I'd have one by now. I'm also a huge fan of online privacy and open source software. Let's make the internet a better place together!
+								I'm new to the web development world and I'm thrilled to jump in with both feet and
+								explore all it has to offer! I'm currently working as a Web Infrastructure
+								Specialist at a banking software company in Connecticut. I've got a degree in
+								Statistics from the University of Connecticut and a burning passion for solving
+								problems. I have experience with supporting large distributed applications,
+								application deployment, CLI tool development and incident management. I love finding
+								ways to make my team's daily work more efficient. I'm constantly on the hunt for new
+								knowledge and I like to think that if there were a certification for internet
+								searching your way out of a problem, I'd have one by now. I'm also a huge fan of
+								online privacy and open source software. Let's make the internet a better place
+								together!
 							</p>
 							<div class="mt-6 flex items-center flex-wrap">
 								<div class="flex-shrink-0">
-									<div class="flex-col space-x-2">
+									<div class="flex-col space-x-2 max-sm:flex-wrap max-sm:items-center">
 										<a
 											class="btn btn-sm btn-secondary"
 											href="https://github.com/jakubcic"
@@ -203,15 +248,29 @@
 										<div href="#" class="mt-2 block">
 											<p class="text-xl font-semibold">G.R.I.M.S</p>
 											<p class="mt-3 text-base">
-												G.R.I.M.S (General Retail Inventory Management System) is an online inventory management system. Users can log in and view, add or edit and delete products. They have the ability to manage the price and current stock of individual items. This application integrates with a cloud image host called Cloudinary.
+												G.R.I.M.S (General Retail Inventory Management System) is an online
+												inventory management system. Users can log in and view, add or edit and
+												delete products. They have the ability to manage the price and current stock
+												of individual items. This application integrates with a cloud image host
+												called Cloudinary.
 											</p>
 										</div>
 									</div>
 									<div class="mt-6 flex items-center">
 										<div class="flex-shrink-0">
 											<div class="flex-col flex-wrap space-x-2">
-												<a href="https://grims-inventory.herokuapp.com/login" target="_blank" class="btn btn-sm btn-accent">Website</a>
-												<a href="https://github.com/Eaponte24/GRIMS" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+												<a
+													href="https://grims-inventory.herokuapp.com/login"
+													target="_blank"
+													class="btn btn-sm btn-accent"
+													>Website</a
+												>
+												<a
+													href="https://github.com/Eaponte24/GRIMS"
+													target="_blank"
+													class="btn btn-sm btn-accent"
+													>GitHub Repo</a
+												>
 											</div>
 										</div>
 									</div>
@@ -231,16 +290,28 @@
 											<div class="badge badge-secondary">MySQL</div>
 										</span>
 										<div href="#" class="mt-2 block">
-											<p class="text-xl font-semibold">Employee Tracker CLI Content Management System</p>
+											<p class="text-xl font-semibold">
+												Employee Tracker CLI Content Management System
+											</p>
 											<p class="mt-3 text-base">
-												Employee Tracker is a CLI content management system (CMS). The purpose of this tool is to manage a database of employees at your company. It's written in JavaScript and runs on Node.js. This application connects to a MySQL database. When you run it you will be presented with choices that include creating, reading, updating, and deleting information from the CMS. The data is displayed in a table in the console.
+												Employee Tracker is a CLI content management system (CMS). The purpose of
+												this tool is to manage a database of employees at your company. It's written
+												in JavaScript and runs on Node.js. This application connects to a MySQL
+												database. When you run it you will be presented with choices that include
+												creating, reading, updating, and deleting information from the CMS. The data
+												is displayed in a table in the console.
 											</p>
 										</div>
 									</div>
 									<div class="mt-6 flex items-center">
 										<div class="flex-shrink-0">
 											<div class="flex-col flex-wrap space-x-2">
-												<a href="https://github.com/jakubcic/employee-tracker" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+												<a
+													href="https://github.com/jakubcic/employee-tracker"
+													target="_blank"
+													class="btn btn-sm btn-accent"
+													>GitHub Repo</a
+												>
 											</div>
 										</div>
 									</div>
@@ -264,15 +335,29 @@
 										<div href="#" class="mt-2 block">
 											<p class="text-xl font-semibold">Code Quiz Challenge</p>
 											<p class="mt-3 text-base">
-												This a quiz consisting of 5 total questions. The user is given 75 seconds to complete the quiz. Each wrong answer will decrement the timer (and consequently the user's score) with a 10 second penalty. The user is given the ability to save their score and view a leaderboard. The scores persist and are saved to the browser's local storage.
+												This a quiz consisting of 5 total questions. The user is given 75 seconds to
+												complete the quiz. Each wrong answer will decrement the timer (and
+												consequently the user's score) with a 10 second penalty. The user is given
+												the ability to save their score and view a leaderboard. The scores persist
+												and are saved to the browser's local storage.
 											</p>
 										</div>
 									</div>
 									<div class="mt-6 flex items-center">
 										<div class="flex-shrink-0">
 											<div class="flex-col flex-wrap space-x-2">
-												<a href="https://jakubcic.github.io/code-quiz/index.html" target="_blank" class="btn btn-sm btn-accent">Website</a>
-												<a href="https://github.com/jakubcic/code-quiz" target="_blank" class="btn btn-sm btn-accent">GitHub Repo</a>
+												<a
+													href="https://jakubcic.github.io/code-quiz/index.html"
+													target="_blank"
+													class="btn btn-sm btn-accent"
+													>Website</a
+												>
+												<a
+													href="https://github.com/jakubcic/code-quiz"
+													target="_blank"
+													class="btn btn-sm btn-accent"
+													>GitHub Repo</a
+												>
 											</div>
 										</div>
 									</div>

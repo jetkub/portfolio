@@ -3345,6 +3345,14 @@ html {
     margin-right: 1.5rem;
   }
 
+  .max-sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .max-sm\:items-center {
+    align-items: center;
+  }
+
   .max-sm\:bg-purple-400 {
     --tw-bg-opacity: 1;
     background-color: rgb(192 132 252 / var(--tw-bg-opacity));
