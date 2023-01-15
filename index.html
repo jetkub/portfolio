@@ -1,49 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html
+	lang="en"
+	data-theme="cupcake"
+>
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./assets/css/main.css" rel="stylesheet" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			href="./assets/css/main.css"
+			rel="stylesheet"
+		/>
 		<title>Portfolio</title>
 	</head>
+
 	<body class="bg-base-300">
 		<!-- testing viewport breakpoints, remove in future-->
 		<!-- <div class="navbar bg-base-200 mb-6 max-sm:bg-purple-400 sm:bg-red-400 md:bg-orange-400 lg:bg-yellow-400 xl:bg-green-400 "> -->
 		<div class="navbar bg-base-100 mb-6">
 			<div class="navbar-start">
 				<div class="dropdown dropdown-right">
-					<label tabindex="0" class="btn btn-sm btn-ghost">
+					<label
+						tabindex="0"
+						class="btn btn-sm btn-ghost"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="w-6 h-6">
+							class="w-6 h-6"
+						>
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
 						</svg>
 					</label>
 					<ul
 						tabindex="0"
-						class="menu menu-compact dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-40">
-						<li><a href="#about" class="text-base">About</a></li>
-						<li><a href="#projects" class="text-base">Projects</a></li>
-						<li><a href="#contact" class="text-base">Contact</a></li>
+						class="menu menu-compact dropdown-content p-2 shadow-lg bg-base-200 rounded-box w-40"
+					>
+						<li>
+							<a
+								href="#about"
+								class="text-base"
+							>
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="#projects"
+								class="text-base"
+							>
+								Projects
+							</a>
+						</li>
+						<li>
+							<a
+								href="#contact"
+								class="text-base"
+							>
+								Contact
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 
 			<!-- add something so that the last two buttons are right-justified when max-sm: -->
 			<div class="navbar-end">
-				<div class="dropdown dropdown-end mx-1" aria-label="theme-picker">
-					<label tabindex="0" class="btn btn-primary btn-sm">Theme</label>
-					<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40">
+				<div
+					class="dropdown dropdown-end mx-1"
+					aria-label="theme-picker"
+				>
+					<label
+						tabindex="0"
+						class="btn btn-primary btn-sm"
+					>
+						Theme
+					</label>
+					<ul
+						tabindex="0"
+						class="menu dropdown-content p-2 shadow bg-base-200 rounded-box w-40"
+					>
 						<li class="h-9">
-							<button class="btn-sm text-base" data-set-theme="" data-act-class="ACTIVECLASS">
+							<button
+								class="btn-sm text-base"
+								data-set-theme=""
+								data-act-class="ACTIVECLASS"
+							>
 								System Theme
 							</button>
 						</li>
@@ -51,12 +106,17 @@
 							<button
 								class="btn-sm text-base"
 								data-set-theme="cupcake"
-								data-act-class="ACTIVECLASS">
+								data-act-class="ACTIVECLASS"
+							>
 								Cupcake
 							</button>
 						</li>
 						<li class="h-9">
-							<button class="btn-sm text-base" data-set-theme="dark" data-act-class="ACTIVECLASS">
+							<button
+								class="btn-sm text-base"
+								data-set-theme="dark"
+								data-act-class="ACTIVECLASS"
+							>
 								Dark
 							</button>
 						</li>
@@ -64,7 +124,8 @@
 							<button
 								class="btn-sm text-base"
 								data-set-theme="emerald"
-								data-act-class="ACTIVECLASS">
+								data-act-class="ACTIVECLASS"
+							>
 								Emerald
 							</button>
 						</li>
@@ -72,7 +133,8 @@
 							<button
 								class="btn-sm text-base"
 								data-set-theme="corporate"
-								data-act-class="ACTIVECLASS">
+								data-act-class="ACTIVECLASS"
+							>
 								Corporate
 							</button>
 						</li>
@@ -80,12 +142,17 @@
 							<button
 								class="btn-sm text-base"
 								data-set-theme="synthwave"
-								data-act-class="ACTIVECLASS">
+								data-act-class="ACTIVECLASS"
+							>
 								Synthwave
 							</button>
 						</li>
 						<li class="h-9">
-							<button class="btn-sm text-base" data-set-theme="aqua" data-act-class="ACTIVECLASS">
+							<button
+								class="btn-sm text-base"
+								data-set-theme="aqua"
+								data-act-class="ACTIVECLASS"
+							>
 								Aqua
 							</button>
 						</li>
@@ -93,12 +160,17 @@
 							<button
 								class="btn-sm text-base"
 								data-set-theme="wireframe"
-								data-act-class="ACTIVECLASS">
+								data-act-class="ACTIVECLASS"
+							>
 								Wireframe
 							</button>
 						</li>
 						<li class="h-9">
-							<button class="btn-sm text-base" data-set-theme="night" data-act-class="ACTIVECLASS">
+							<button
+								class="btn-sm text-base"
+								data-set-theme="night"
+								data-act-class="ACTIVECLASS"
+							>
 								Night
 							</button>
 						</li>
@@ -110,9 +182,14 @@
 			<section>
 				<a name="about">
 					<div
-						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6">
-						<figure class="py-16">
-							<img class="rounded-full" src="./assets/images/jakub.jpg" alt="headshot" />
+						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-xl lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6"
+					>
+						<figure class="py-6 sm:py-12">
+							<img
+								class="rounded-full"
+								src="./assets/images/jakub.jpg"
+								alt="headshot"
+							/>
 						</figure>
 						<div class="card-body">
 							<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -137,36 +214,42 @@
 										<a
 											class="btn btn-sm btn-secondary"
 											href="https://github.com/jakubcic"
-											target="_blank">
+											target="_blank"
+										>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
 												stroke-width="1.5"
 												stroke="currentColor"
-												class="w-6 h-6">
+												class="w-6 h-6"
+											>
 												<path
 													stroke-linecap="round"
 													stroke-linejoin="round"
-													d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+													d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
+												/>
 											</svg>
 											<span class="ml-1">GitHub</span>
 										</a>
 										<a
 											href="https://www.linkedin.com/in/jakubcic/"
 											target="_blank"
-											class="btn btn-sm btn-accent">
+											class="btn btn-sm btn-accent"
+										>
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
 												stroke-width="1.5"
 												stroke="currentColor"
-												class="w-6 h-6">
+												class="w-6 h-6"
+											>
 												<path
 													stroke-linecap="round"
 													stroke-linejoin="round"
-													d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+													d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+												/>
 											</svg>
 											<span class="ml-1">LinkedIn</span>
 										</a>
@@ -177,67 +260,6 @@
 					</div>
 				</a>
 			</section>
-			<!-- <section class="space-y-4 mt-4">
-				<a name="projects">
-					<div
-						class="card divide-y divide-base-100 overflow-hidden bg-base-300 shadow-lg sm:mx-36 max-sm:24 mx-5">
-						<div class="px-4 py-5 sm:px-6">
-							<h2 class="card-title text-5xl text-center">My Projects</h2>
-							
-						</div>
-						<div class="px-4 sm:p-6 space-y-4">
-							<div class="card w-auto bg-base-100">
-								<figure>
-									<img src="https://placeimg.com/400/225/arch" alt="GRIMS landing page" />
-								</figure>
-								<div class="card-body">
-									<h2 class="card-title">
-										G.R.I.M.S
-										<span class="inline-flex space-x-2 flex-wrap">
-											<div class="badge badge-primary">Node.js</div>
-											<div class="badge badge-secondary">Express</div>
-											<div class="badge badge-info">MySQL</div>
-											<div class="badge badge-info">Handlebars</div>
-										</span>
-									</h2>
-									<p>
-										G.R.I.M.S (General Retail Inventory Management System) is an online inventory
-										management system. Users can log in and add products or edit and delete existing
-										ones. They can manage price and stock of individual products.
-									</p>
-									<div class="card-actions justify-end">
-										<a href="" class="btn btn-sm btn-info">Website</a>
-										<a href="" class="btn btn-sm btn-info">GitHub Repo</a>
-									</div>
-								</div>
-							</div>
-							<div class="card w-auto bg-base-100">
-								<figure>
-									<img src="https://placeimg.com/400/225/arch" alt="GRIMS landing page" />
-								</figure>
-								<div class="card-body">
-									<h2 class="card-title">
-										G.R.I.M.S
-										<div class="badge badge-primary">Node.js</div>
-										<div class="badge badge-secondary">Express</div>
-										<div class="badge badge-info">MySQL</div>
-										<div class="badge badge-info">Handlebars</div>
-									</h2>
-									<p>
-										G.R.I.M.S (General Retail Inventory Management System) is an online inventory
-										management system. Users can log in and add products or edit and delete existing
-										ones. They can manage price and stock of individual products.
-									</p>
-									<div class="card-actions justify-end">
-										<a href="" class="btn btn-sm btn-info">Website</a>
-										<a href="" class="btn btn-sm btn-info">GitHub Repo</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</a>
-			</section> -->
 			<section>
 				<div class="relative px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
 					<div class="relative mx-auto max-w-7xl">
@@ -255,7 +277,8 @@
 									<img
 										class="h-48 w-full object-cover"
 										src="./assets/images/grims-preview.jpg"
-										alt="GRIMS web application landing page" />
+										alt="GRIMS web application landing page"
+									/>
 								</div>
 								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
 									<div class="flex-1">
@@ -265,7 +288,10 @@
 											<div class="badge badge-secondary">MySQL</div>
 											<div class="badge badge-secondary">Handlebars</div>
 										</span>
-										<div href="#" class="mt-2 block">
+										<div
+											href="#"
+											class="mt-2 block"
+										>
 											<p class="text-xl font-semibold">G.R.I.M.S</p>
 											<p class="mt-3 text-base">
 												G.R.I.M.S (General Retail Inventory Management System) is an online
@@ -283,14 +309,16 @@
 													href="https://grims-inventory.herokuapp.com/login"
 													target="_blank"
 													class="btn btn-sm btn-accent"
-													>Website</a
 												>
+													Website
+												</a>
 												<a
 													href="https://github.com/Eaponte24/GRIMS"
 													target="_blank"
 													class="btn btn-sm btn-accent"
-													>GitHub Repo</a
 												>
+													GitHub Repo
+												</a>
 											</div>
 										</div>
 									</div>
@@ -301,7 +329,8 @@
 									<img
 										class="h-48 w-full object-cover"
 										src="./assets/images/employee-tracker-cli.jpg"
-										alt="Employee Tracker CLI tool terminal window" />
+										alt="Employee Tracker CLI tool terminal window"
+									/>
 								</div>
 								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
 									<div class="flex-1">
@@ -309,7 +338,10 @@
 											<div class="badge badge-secondary">node.js</div>
 											<div class="badge badge-secondary">MySQL</div>
 										</span>
-										<div href="#" class="mt-2 block">
+										<div
+											href="#"
+											class="mt-2 block"
+										>
 											<p class="text-xl font-semibold">
 												Employee Tracker CLI Content Management System
 											</p>
@@ -330,8 +362,9 @@
 													href="https://github.com/jakubcic/employee-tracker"
 													target="_blank"
 													class="btn btn-sm btn-accent"
-													>GitHub Repo</a
 												>
+													GitHub Repo
+												</a>
 											</div>
 										</div>
 									</div>
@@ -343,7 +376,8 @@
 									<img
 										class="h-48 w-full object-cover"
 										src="./assets/images/coding-quiz.jpg"
-										alt="Code Quiz Challenge landing page" />
+										alt="Code Quiz Challenge landing page"
+									/>
 								</div>
 								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
 									<div class="flex-1">
@@ -352,7 +386,10 @@
 											<div class="badge badge-secondary">HTML</div>
 											<div class="badge badge-secondary">CSS</div>
 										</span>
-										<div href="#" class="mt-2 block">
+										<div
+											href="#"
+											class="mt-2 block"
+										>
 											<p class="text-xl font-semibold">Code Quiz Challenge</p>
 											<p class="mt-3 text-base">
 												This a quiz consisting of 5 total questions. The user is given 75 seconds to
@@ -370,18 +407,178 @@
 													href="https://jakubcic.github.io/code-quiz/index.html"
 													target="_blank"
 													class="btn btn-sm btn-accent"
-													>Website</a
 												>
+													Website
+												</a>
 												<a
 													href="https://github.com/jakubcic/code-quiz"
 													target="_blank"
 													class="btn btn-sm btn-accent"
-													>GitHub Repo</a
 												>
+													GitHub Repo
+												</a>
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="relative bg-base-300">
+					<div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
+						<div class="bg-secondary py-16 px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+							<div class="mx-auto max-w-lg">
+								<h2 class="text-2xl font-bold tracking-tight text-base-content sm:text-3xl">
+									Get in touch
+								</h2>
+								<p class="mt-3 text-lg leading-6 text-base-100">
+									Please reach out to me if you would like to collaborate on a project or if you have any questions about my work.
+								</p>
+								<dl class="mt-8 text-base text-base-100">
+									<div>
+										<dt class="sr-only">Postal address</dt>
+										<dd>
+											<p>West Hartford, CT 06110</p>
+										</dd>
+									</div>
+									<!-- <div class="mt-6">
+										<dt class="sr-only">Phone number</dt>
+										<dd class="flex">
+											<svg
+												class="h-6 w-6 flex-shrink-0 text-base-100"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+												/>
+											</svg>
+											<span class="ml-3">+1 (860) 716-1713</span>
+										</dd>
+									</div> -->
+									<div class="mt-3">
+										<dt class="sr-only">Email</dt>
+										<dd class="flex">
+											<!-- Heroicon name: outline/envelope -->
+											<svg
+												class="h-6 w-6 flex-shrink-0 text-base-100"
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												aria-hidden="true"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+												/>
+											</svg>
+											<span class="ml-3 hover:underline"><a href="mailto:jakub@uconn.edu">jakub@uconn.edu</a></span>
+										</dd>
+									</div>
+								</dl>
+								<p class="mt-6 text-base-content">
+									Are you a recruiter?
+									<a
+										href="#"
+										class="font-medium text-base-content hover:underline"
+									>
+										Please check out my LinkedIn
+									</a>
+									.
+								</p>
+							</div>
+						</div>
+						<div class="bg-base-100 py-16 px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+							<div class="mx-auto max-w-lg lg:max-w-none">
+								<form
+									action="#"
+									method="POST"
+									class="grid grid-cols-1 gap-y-6"
+								>
+									<div>
+										<label
+											for="full-name"
+											class="sr-only"
+										>
+											Full name
+										</label>
+										<input
+											type="text"
+											name="full-name"
+											id="full-name"
+											autocomplete="name"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											placeholder="Full name"
+										/>
+									</div>
+									<div>
+										<label
+											for="email"
+											class="sr-only"
+										>
+											Email
+										</label>
+										<input
+											id="email"
+											name="email"
+											type="email"
+											autocomplete="email"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											placeholder="Email"
+										/>
+									</div>
+									<div>
+										<label
+											for="phone"
+											class="sr-only"
+										>
+											Phone
+										</label>
+										<input
+											type="text"
+											name="phone"
+											id="phone"
+											autocomplete="tel"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											placeholder="Phone"
+										/>
+									</div>
+									<div>
+										<label
+											for="message"
+											class="sr-only"
+										>
+											Message
+										</label>
+										<textarea
+											id="message"
+											name="message"
+											rows="4"
+											class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+											placeholder="Message"
+										></textarea>
+									</div>
+									<div>
+										<button
+											type="submit"
+											class="inline-flex justify-center btn btn-sm btn-secondary" 
+										>
+											Submit
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
