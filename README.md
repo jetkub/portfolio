@@ -1,5 +1,9 @@
-# Web Development Portfolio
+# Personal Website
 
-## Description
+## Notes
 
-CURRENTLY BEING REBUILT
+When working on this, don't forget to run
+```
+npm run build:css
+```
+so that your changes to TailwindCSS classes are reflected in the browser. Save yourself some frustration 🙂
