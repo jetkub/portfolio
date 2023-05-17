@@ -104,7 +104,7 @@
 			<section class="grid place-items-center">
 				<a name="about">
 					<div
-						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-lg lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6 max-w-7xl"
+						class="card rounded-xl lg:card-side md:card-side bg-base-100 shadow-lg lg:mx-32 md:mx-20 sm:mx-10 max-sm:mx-6 px-6 max-w-5xl "
 					>
 						<figure class="pt-6 pb-4 md:pt-8">
 							<img class="h-48 w-48 md:h-32 md:w-32 rounded-full" src="./assets/images/jakub.jpg" alt="headshot" />
@@ -117,9 +117,9 @@
 								I'm new to the software development world and I'm thrilled to jump in with both feet and explore
 								all it has to offer! I communicate in English fluently and have a working proficieny in Polish.
 								I worked as a Web Infrastructure Specialist at a banking software company in
-								Connecticut from September 2018 until April 2023 when I took a step away from my position to reset my career. I've got a degree in Statistics from the University of Connecticut and a burning
+								Connecticut starting in September 2018 until April 2023 when I took a step away from my position to reset my career. I've got a degree in Statistics from the University of Connecticut and a burning
 								passion for solving problems. I have experience with supporting large distributed
-								applications, application deployment, CLI tool development and incident management. I love
+								applications, application deployment, shell scripting, CLI tool development and incident management. I love
 								finding ways to make my team's daily work more efficient. I'm constantly on the hunt for new
 								knowledge and I like to think that if there were a certification for internet searching your
 								way out of a problem, I'd have one by now. I'm also a huge fan of online privacy and open
@@ -191,7 +191,7 @@
 			</section>
 			<section>
 				<div class="relative px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-					<div class="relative mx-auto max-w-7xl">
+					<div class="relative mx-auto max-w-5xl">
 						<a name="projects">
 							<div class="text-center">
 								<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">My Projects</h2>
@@ -200,11 +200,61 @@
 								</p>
 							</div>
 						</a>
-						<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+						<div class="mx-auto mt-12 grid max-w-md gap-8 lg:max-w-none lg:grid-cols-2">
+						<!-- project cards -->
+
 							<div class="flex flex-col overflow-hidden rounded-xl shadow-lg">
 								<div class="flex-shrink-0">
 									<img
-										class="h-48 w-full object-cover"
+										class="h-56 w-full object-cover"
+										src="./assets/images/kingme.png"
+										alt="kingme website landing page"
+									/>
+								</div>
+								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
+									<div class="flex-1">
+										<span class="flex-wrap">
+											<div class="badge badge-secondary">React</div>
+											<div class="badge badge-secondary">node.js</div>
+											<div class="badge badge-secondary">express.js</div>
+											<div class="badge badge-secondary">MongoDB</div>
+											<div class="badge badge-secondary">GraphQL</div>
+											<div class="badge badge-secondary">TailwindCSS</div>
+										</span>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">kingme.gg</p>
+											<p class="mt-3 text-base">
+												kingme.gg is an online checkers game built with Node.js, Express, React, MongoDB, GraphQL, and TailwindCSS. Multiplayer support is still a work-in-progress. Currently users can choose to play in a hot-seat mode where they play against someone else locally on the same device.
+											</p>
+										</div>
+									</div>
+									<div class="mt-6 flex items-center">
+										<div class="flex-shrink-0">
+											<div class="flex-col flex-wrap space-x-2">
+												<a
+													href="https://kingme.gg"
+													target="_blank"
+													class="btn btn-sm btn-primary"
+												>
+													Website
+												</a>
+												<a
+													href="https://github.com/jetkub/kingme"
+													target="_blank"
+													class="btn btn-sm btn-primary"
+												>
+													GitHub Repo
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex flex-col overflow-hidden rounded-xl shadow-lg">
+								<div class="flex-shrink-0">
+									<img
+										class="h-56 w-full object-cover"
 										src="./assets/images/grims-preview.jpg"
 										alt="GRIMS web application landing page"
 									/>
@@ -250,10 +300,11 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="flex flex-col overflow-hidden rounded-xl shadow-lg">
 								<div class="flex-shrink-0">
 									<img
-										class="h-48 w-full object-cover"
+										class="h-56 w-full object-cover"
 										src="./assets/images/mega-tech-blog.png"
 										alt="Mega Tech Blog user dashboard"
 									/>
@@ -305,7 +356,46 @@
 							<div class="flex flex-col overflow-hidden rounded-xl shadow-lg">
 								<div class="flex-shrink-0">
 									<img
-										class="h-48 w-full object-cover"
+										class="h-56 w-full object-cover"
+										src="./assets/images/social-network-api.png"
+										alt="screenshot of social network API being tested in Insomnia"
+									/>
+								</div>
+								<div class="flex flex-1 flex-col justify-between bg-base-100 p-6">
+									<div class="flex-1">
+										<span class="flex-wrap">
+											<div class="badge badge-secondary">node.js</div>
+											<div class="badge badge-secondary">express.js</div>
+											<div class="badge badge-secondary">MongoDB</div>
+											<div class="badge badge-secondary">Mongoose</div>
+										</span>
+										<div href="#" class="mt-2 block">
+											<p class="text-xl font-semibold">Social Network API</p>
+											<p class="mt-3 text-base">
+												This is a RESTful API that serves as a backend for a social network web application where users can share their thoughts, react to friends thoughts, and create a friend list. This application uses a NoSQL database and is built with Express.js.
+											</p>
+										</div>
+									</div>
+									<div class="mt-6 flex items-center">
+										<div class="flex-shrink-0">
+											<div class="flex-col flex-wrap space-x-2">
+												<a
+													href="https://github.com/jetkub/social-network-api"
+													target="_blank"
+													class="btn btn-sm btn-primary"
+												>
+													GitHub Repo
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex flex-col overflow-hidden rounded-xl shadow-lg">
+								<div class="flex-shrink-0">
+									<img
+										class="h-56 w-full object-cover"
 										src="./assets/images/employee-tracker-cli.jpg"
 										alt="Employee Tracker CLI tool terminal window"
 									/>
@@ -350,7 +440,7 @@
 				<div class="bg-accent">
 					<!-- commented out and replaced lines that I don't need until I make the contact form work -->
 					<!-- <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-6"> -->
-					<div class="relative mx-auto max-w-7xl">
+					<div class="relative mx-auto max-w-6xl">
 						<!-- <div class="bg-accent py-16 px-6 lg:col-span-3 lg:px-8 lg:py-24 xl:pr-12"> -->
 						<div class="bg-accent py-16 px-6 lg:px-8 lg:py-24 xl:pr-12">
 							<div class="mx-auto max-w-lg">
